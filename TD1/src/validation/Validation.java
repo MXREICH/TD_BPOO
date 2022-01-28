@@ -54,4 +54,12 @@ public interface Validation
             else return false;
     }
 
+    public default void validateIntNeg(int A){
+        if ( A < 0 ){
+            System.out.println(VALIDATION_FAIL_INT_NEGATIVE);
+            System.exit(1);
+        }
+        
+    }
+
 }
